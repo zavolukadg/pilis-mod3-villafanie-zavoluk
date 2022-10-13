@@ -6,15 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { UserProvider } from './context/UserContext';
 import { FiltersProvider } from './context/FiltersContext';
+import { TarjetasProvider } from './context/TarjetasContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <UserProvider>
-        <FiltersProvider>
+        <TarjetasProvider>
+          <FiltersProvider>
             <App /> 
-        </FiltersProvider>
+          </FiltersProvider>
+        </TarjetasProvider> 
       </UserProvider>
     </BrowserRouter>
   </React.StrictMode>

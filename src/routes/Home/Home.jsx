@@ -1,15 +1,18 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import './Home.css';
-import Tags from '../../components/Tarjeta/Tags';
 import { FiltersContext } from '../../context/FiltersContext';
+import { TarjetasContext } from '../../context/TarjetasContext';
+import Buscador2 from '../../components/Buscador/Buscador2';
 
 const Home = () => {
-  const { filters } = useContext(FiltersContext);
+  const { tarjetas } = useContext(TarjetasContext); 
+  const { filters } = useContext(FiltersContext)
 
   return (
     <>
       <div className='main-container'>
-        <Tags />
+        <Buscador2/>
+        {/* <Tarjetas tarjetas={tarjetas}/> */}
       </div>
     </>
   );

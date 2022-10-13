@@ -1,0 +1,14 @@
+  .input-buscador {
+    background: none;
+    background-color: white;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+    margin: 10px 0px 5px 0px;
+  }
+
+  .label-buscador{
+    font-size: 18px;
+  }

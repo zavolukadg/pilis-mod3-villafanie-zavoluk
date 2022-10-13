@@ -2,7 +2,7 @@ import { useContext, useState } from 'react';
 import './Home.css';
 import { FiltersContext } from '../../context/FiltersContext';
 import { TarjetasContext } from '../../context/TarjetasContext';
-import Buscador2 from '../../components/Buscador/Buscador2';
+import Buscador from '../../components/Buscador/Buscador';
 
 const Home = () => {
   const { tarjetas } = useContext(TarjetasContext); 
@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <div className='main-container'>
-        <Buscador2/>
+        <Buscador/>
         {/* <Tarjetas tarjetas={tarjetas}/> */}
       </div>
     </>

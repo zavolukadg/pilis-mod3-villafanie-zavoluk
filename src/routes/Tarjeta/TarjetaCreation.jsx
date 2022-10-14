@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import { TarjetasContext } from '../../context/TarjetasContext';
 import { getTimeInfo } from '../../service';
 import './TarjetaCreation.css';
@@ -130,13 +130,19 @@ const TarjetaCreation = () => {
           {...register('imagen')}
         />
         
-        <button className='btn-form' onClick={e => cargarInfoClima(e)}>
-          Cargar Datos
-        </button>
-        <button className='btn-form' type='submit'>
-          Crear Tarjeta
-        </button>
+        <div className='tarjeta-creation-actions'>
+          <button className='btn-form' onClick={e => cargarInfoClima(e)}>
+            Cargar Datos
+          </button>
+          <button className='btn-form' type='submit'>
+            Crear Tarjeta
+          </button>
+        </div>
       </form>
+
+      <Link className='btn-back' to='/'>
+          Volver al Inicio
+      </Link>
     </div>
   );
 };

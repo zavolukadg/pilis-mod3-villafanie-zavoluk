@@ -24,6 +24,13 @@
   margin: 10px 0px 5px 0px;
 }
 
+.tarjeta-creation-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px;
+}
+
 .input-tarjeta-name-form:focus {
   outline: none;
 }

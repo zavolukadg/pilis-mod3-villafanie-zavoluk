@@ -2,7 +2,7 @@ import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { DeletedContext } from '../../context/DeletedContext';
 import './Tarjeta.css';
-import { BsTrash,BsFillEyeFill } from "react-icons/bs";
+import { BsTrash,BsFillEyeFill,BsPencilSquare } from "react-icons/bs";
 import { TarjetasContext } from '../../context/TarjetasContext';
 
 const Tarjeta = ({ tarjeta }) => {
@@ -34,6 +34,10 @@ const Tarjeta = ({ tarjeta }) => {
         <Link className='btn-see-more' to={`/tarjeta/${id}`}>
           <BsFillEyeFill/> 
           Ver Detalle
+        </Link>
+        <Link className='btn-see-more' to={`/tarjeta/edit${id}`}>
+          <BsPencilSquare/> 
+          Modificar
         </Link>
         <button className='btn-see-more' onClick={handleDeleted}>
           <BsTrash/>  

@@ -5,6 +5,7 @@ import Navigation from './routes/Navigation/Navigation';
 import Login from './routes/Login/Login';
 import TarjetaCreation from './routes/Tarjeta/TarjetaCreation';
 import TarjetaDetail from './routes/Tarjeta/TarjetaDetail';
+import TarjetaEdit from './routes/Tarjeta/TarjetaEdit';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
               <Route path='login' element={<Login/>}/>
               <Route path='tarjeta/:id' element={<TarjetaDetail/>}/>
               <Route path='tarjeta/create' element={<TarjetaCreation/>}/>
+              <Route path='tarjeta/edit:id' element={<TarjetaEdit/>}/>
             </Route>
           </Routes>
       </div>

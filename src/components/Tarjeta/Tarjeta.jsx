@@ -33,15 +33,15 @@ const Tarjeta = ({ tarjeta }) => {
       <div className='tarjeta-actions'>
         <Link className='btn-see-more' to={`/tarjeta/${id}`}>
           <BsFillEyeFill/> 
-          Ver Detalle
+            Ver Detalle
         </Link>
         <Link className='btn-see-more' to={`/tarjeta/edit${id}`}>
           <BsPencilSquare/> 
-          Modificar
+            Modificar
         </Link>
         <button className='btn-see-more' onClick={handleDeleted}>
           <BsTrash/>  
-          Quitar
+            Quitar
         </button>
       </div>
     </div>

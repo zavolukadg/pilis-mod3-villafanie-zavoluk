@@ -1,7 +1,13 @@
 .grid {
-  width: 85vw;
+  width: 97vw;
+  height: 30vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+  
+}
+#msg{
+  grid-column: 2/3 ;
+  padding: 30px;
 }

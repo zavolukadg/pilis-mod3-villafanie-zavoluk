@@ -5,9 +5,10 @@ const Tarjetas = ({ tarjetas }) => {
 
   return (
     <div className='grid'>
+    
       {
         tarjetas.length === 0 ? (
-          <span>No existen tarjetas para mostrar</span>
+          <span id="msg">No existen tarjetas para mostrar</span>
         ): (
           tarjetas.map((tarjeta) => (
             <Tarjeta key={tarjeta.id} tarjeta={tarjeta} />

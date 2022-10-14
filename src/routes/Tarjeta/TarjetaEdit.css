@@ -5,7 +5,7 @@
   padding-top: 50px;
 }
 
-.tarjeta-display-card {
+/* .tarjeta-display-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,7 +14,7 @@
   border-radius: 5px;
   padding: 20px;
 }
-
+ */
 .tarjeta-display-name {
   margin-bottom: 10px;
 }
@@ -55,6 +55,7 @@
 }
 
 .btn-back {
+  background-color: #A8E890;
   margin-top: 30px;
   width: 200px;
   font-size: 12px;
@@ -65,18 +66,23 @@
   color: #000;
 }
 
+.btn-back:hover {
+  cursor: pointer;
+  background-color: #425F57;
+  color: #fff;
+}
+
 .btn-form {
+  background-color: #CFFF8D;
+  color: #000;
   width: 200px;
   font-size: 12px;
   text-decoration: none;
   border: 1px solid #e9e9e9;
   border-radius: 5px;
 }
-
-.btn-back:hover {
-  cursor: pointer;
-  background-color: rgb(37, 37, 37);
-  color: #fff;
+.btn-form:hover{
+  background-color: #425F57;
 }
 
 .tag-d-container {
@@ -88,6 +94,6 @@
 }
 
 .imagen {
-  height: 170px;
-  width: 170px;
+  height: 200px;
+  width: 250px;
 }

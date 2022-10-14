@@ -154,7 +154,7 @@ const TarjetaDetail = () => {
           </div>
         </form>
       </div>
-      <Link className='btn-back' to='/'>
+      <Link className='btn-form' to='/'>
             Volver al Inicio
         </Link>
     </div>

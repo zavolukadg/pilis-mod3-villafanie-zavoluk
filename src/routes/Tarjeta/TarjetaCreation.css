@@ -2,13 +2,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 50px;
 }
 
 .tarjeta-form {
-  display: flex;
+/*   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
+  width: 300px; */
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    padding: 20px;
+
 }
 
 .input-tarjeta-name-form {

@@ -85,13 +85,13 @@ h3 {
 
 .btn-see-more:hover {
   cursor: pointer;
-  background-color: rgb(37, 37, 37);
+  background-color: #749F82;
   color: #fff;
 }
 
 .tarjeta-imagen{
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 150px;
   display:block;
   margin:auto;  
 }

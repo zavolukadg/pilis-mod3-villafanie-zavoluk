@@ -54,7 +54,7 @@ const TarjetaCreation = () => {
 
   return (
     <div className='tarjeta-new-container'>
-      <span>Crea una nueva tarjeta</span>
+      <h1>Crea una nueva tarjeta</h1>
       <form className='tarjeta-form' onSubmit={handleSubmit(onSubmit)}>
         <input
           className='input-tarjeta-name-form'
@@ -69,8 +69,8 @@ const TarjetaCreation = () => {
         <input
           className='input-tarjeta-name-form'
           type='text'
-          placeholder='Latitud'
-          value = "-22.6972132"
+          placeholder='Latitud (ej: -22.6972132)'
+          /* value = "-22.6972132" */
           /* value={latitud} */
           {...register('latitud', {
             required: 'Debe ingresar la latitud',
@@ -81,8 +81,8 @@ const TarjetaCreation = () => {
         <input
           className='input-tarjeta-name-form'
           type='text'
-          placeholder='Longitud'
-          value = "-66.4968405"
+          placeholder='Longitud (ej: -66.4968405)'
+          /* value = "-66.4968405" */
           /* value={longitud} */
           {...register('longitud', {
             required: 'Debe ingresar la longitud',
